@@ -66,7 +66,7 @@ https://braziliex.com/exchange/api.php'''
         '''Used to get the last 24 hour summary of all active exchanges.'''
         return self.__get('ticker')
     
-    def ticker(self, market):
+    def ticker_market(self, market):
         '''Used to get the current tick values for a market.'''
         if(market and market!='' and type(market)!=Market):
             raise ValueError('Parâmetro market inválido, utilize a classe Market.')

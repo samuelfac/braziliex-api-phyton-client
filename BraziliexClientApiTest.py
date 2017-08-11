@@ -7,7 +7,7 @@ API_SECRET = '<API_SECRET>'
 api = BraziliexClientApi.Api()
 print (api.currencies())
 print (api.ticker())
-print (api.ticker(BraziliexClientApi.Market.BTC_BRL))
+print (api.ticker_market(BraziliexClientApi.Market.BTC_BRL))
 print (api.orderbook(BraziliexClientApi.Market.BTC_BRL))
 print (api.tradehistory(BraziliexClientApi.Market.BTC_BRL))
 
